@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 API-First Developer Portfolio
 
-## Getting Started
+> A unique developer portfolio designed to mimic high-end API documentation. Built with Next.js, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+![Portfolio Preview](public/preview.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- **Terminal Hero Section**: Realistic typing animation that "fetches" user data.
+- **API Documentation Style**: Navigation and content structured as API endpoints (GET /experience, POST /contact).
+- **Interactive JSON Responses**: Experience and projects are presented as beautiful, syntax-highlighted JSON payloads.
+- **"Deep Dark" Theme**: A premium dark mode aesthetic (`#0B0C10`) with neon accents.
+- **Responsive Design**: Fully responsive sidebar (drawer on mobile) and layout.
+- **AI Chat Widget**: A floating chat assistant (mock) for added interactivity.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Syntax Highlighting**: [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+
+## 🚀 Getting Started
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/api-portfolio.git
+    cd api-portfolio
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📂 Project Structure
+
+```
+├── app/
+│   ├── layout.tsx       # Root layout with fonts and theme
+│   └── page.tsx         # Main single-page application logic
+├── components/
+│   ├── Sidebar.tsx      # Navigation (Endpoints list)
+│   ├── Hero.tsx         # Terminal typing effect
+│   ├── ApiEndpoint.tsx  # Collapsible accordion for sections
+│   ├── JsonViewer.tsx   # Syntax highlighted JSON display
+│   ├── SkillsGrid.tsx   # Visual grid for skills
+│   └── ChatWidget.tsx   # Floating AI assistant
+├── lib/
+│   └── data.ts          # Centralized content file (CV data)
+└── public/              # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To personalize this portfolio, simply edit the `lib/data.ts` file. All content (profile, experience, projects, skills) is dynamically rendered from this single source of truth.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```typescript
+// lib/data.ts
+export const portfolioData = {
+  personal: {
+    name: "Your Name",
+    role: "Your Role",
+    // ...
+  },
+  // ...
+};
+```
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is open source and available under the [MIT License](LICENSE).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with ❤️ by [Daniil Svirenko](https://github.com/Daniilsvirenko)*
