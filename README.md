@@ -2,7 +2,6 @@
 
 > A unique developer portfolio designed to mimic high-end API documentation. Built with Next.js, Tailwind CSS, and Framer Motion.
 
-![Portfolio Preview](public/preview.png)
 
 ## ✨ Features
 
@@ -25,7 +24,7 @@
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/api-portfolio.git
+    git clone https://github.com/Daniilsvirenko/api-portfolio.git
     cd api-portfolio
     ```
 
@@ -76,8 +75,6 @@ export const portfolioData = {
   // ...
 };
 ```
-
-## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
